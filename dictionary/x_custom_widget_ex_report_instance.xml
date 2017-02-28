@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="update_synch=true" extends="sp_instance" label="Report Instance" max_length="40" name="x_custom_widget_ex_report_instance" type="collection">
+        <element display="true" label="Report Source" max_length="32" name="report_source" reference="sys_report" type="reference"/>
+        <index name="index">
+            <element name="report_source"/>
+        </index>
+    </element>
+</database>
